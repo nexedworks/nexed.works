@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<main class="container h-full mx-auto flex flex-col flex-wrap items-center">
-  <header class="flex w-full h-full flex-col justify-center overflow-y-hidden px-12">
+<main class="container h-full mx-auto flex flex-col items-center">
+  <header class="flex w-full grow flex-col justify-center overflow-y-hidden px-12">
     <h1 class="my-6 text-center text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-regia to-brutal-orange leading-tight md:text-5xl">
       {{ metadata.title }}
     </h1>
@@ -17,4 +17,7 @@ layout: default
       </svg>
     </a>
   </header>
+  <footer class="flex-none text-center w-full h-16">
+    <small>&copy; Copyright 2023, neXed (Pty) Ltd. 🇿🇦</small>
+  </footer>
 </main>
