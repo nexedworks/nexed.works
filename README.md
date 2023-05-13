@@ -1,5 +1,7 @@
 # neXed.works
 
+[![Deploy Eleventy site to Pages](https://github.com/neXedworks/nexed.works/actions/workflows/deploy.yml/badge.svg)](https://github.com/neXedworks/nexed.works/actions/workflows/deploy.yml)
+
 Bitcoin / LN ⚡️software, consulting, and training services. 
 
 ## How to use
