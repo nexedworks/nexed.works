@@ -2,30 +2,113 @@
 layout: default
 ---
 
-<main class="container h-full mx-auto flex flex-col items-center">
-  <header class="flex w-full grow flex-col justify-center overflow-y-hidden px-12">
-    <canvas id="canvas" width="250" height="250"></canvas>
-    <p class="mb-8 text-center text-base leading-normal md:text-2xl">{{ metadata.description }}</p>
+<div class="bg-duskberry">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only"></span>
+          <img class="h-8 w-auto" src="jelly.svg" alt="">
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+    <div class="mx-auto max-w-2xl py-24 sm:py-24 lg:pt-48">
+      <div class="flex justify-center">
+          <svg class="w-auto h-auto max-w-sm py-14 px-4" width="1244" height="396" viewBox="0 0 1244 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1028.19 191.356C1028.19 170.347 1032.5 151.743 1041.1 135.544C1049.96 119.344 1061.86 106.815 1076.79 97.9558C1091.98 88.8436 1108.81 84.2876 1127.29 84.2876C1140.96 84.2876 1154.37 87.3249 1167.53 93.3997C1180.95 99.2214 1191.58 107.068 1199.43 116.939V15.9462H1243.09V296.905H1199.43V265.392C1192.34 275.517 1182.47 283.87 1169.81 290.451C1157.41 297.032 1143.11 300.322 1126.91 300.322C1108.68 300.322 1091.98 295.766 1076.79 286.654C1061.86 277.288 1049.96 264.38 1041.1 247.927C1032.5 231.221 1028.19 212.364 1028.19 191.356ZM1199.43 192.115C1199.43 177.687 1196.39 165.158 1190.31 154.527C1184.49 143.896 1176.77 135.797 1167.15 130.228C1157.54 124.66 1147.16 121.875 1136.02 121.875C1124.88 121.875 1114.51 124.66 1104.89 130.228C1095.27 135.544 1087.42 143.517 1081.35 154.148C1075.53 164.525 1072.61 176.928 1072.61 191.356C1072.61 205.783 1075.53 218.439 1081.35 229.323C1087.42 240.207 1095.27 248.56 1104.89 254.381C1114.76 259.95 1125.14 262.734 1136.02 262.734C1147.16 262.734 1157.54 259.95 1167.15 254.381C1176.77 248.813 1184.49 240.713 1190.31 230.082C1196.39 219.198 1199.43 206.543 1199.43 192.115Z" fill="white"/>
+            <path d="M1000.03 187.179C1000.03 195.026 999.519 202.113 998.507 208.441H838.664C839.93 225.146 846.131 238.562 857.268 248.686C868.405 258.811 882.074 263.873 898.273 263.873C921.56 263.873 938.012 254.128 947.631 234.638H994.331C988.003 253.875 976.486 269.695 959.78 282.097C943.328 294.247 922.825 300.322 898.273 300.322C878.277 300.322 860.306 295.892 844.359 287.033C828.666 277.921 816.263 265.265 807.151 249.066C798.292 232.613 793.863 213.63 793.863 192.115C793.863 170.6 798.166 151.743 806.772 135.543C815.631 119.091 827.907 106.435 843.6 97.5759C859.546 88.7168 877.771 84.2873 898.273 84.2873C918.016 84.2873 935.608 88.5903 951.048 97.1962C966.488 105.802 978.511 117.952 987.117 133.645C995.723 149.085 1000.03 166.93 1000.03 187.179ZM954.844 173.511C954.591 157.564 948.896 144.782 937.759 135.164C926.622 125.545 912.827 120.736 896.375 120.736C881.441 120.736 868.659 125.545 858.028 135.164C847.397 144.529 841.069 157.311 839.044 173.511H954.844Z" fill="white"/>
+            <path d="M501.778 396L488.109 389.546L563.285 236.537C559.235 231.728 556.198 226.665 554.173 221.35C552.148 215.781 551.135 209.833 551.135 203.505C551.135 195.912 552.527 188.951 555.312 182.623C558.349 176.295 562.779 170.6 568.6 165.538L527.596 3.79676L542.023 0L581.889 157.565C584.926 156.046 588.09 155.034 591.381 154.527C594.671 153.768 597.962 153.388 601.252 153.388C607.074 153.388 612.516 154.274 617.578 156.046C622.641 157.565 627.323 160.096 631.626 163.64L751.224 69.4803L760.336 81.2503L641.877 174.27C645.168 178.573 647.572 183.256 649.091 188.318C650.61 193.128 651.369 198.19 651.369 203.505C651.369 215.655 647.446 226.412 639.599 235.778L715.534 389.546L701.866 396L627.829 246.029C619.73 251.091 610.871 253.622 601.252 253.622C591.634 253.622 582.901 251.218 575.055 246.408L501.778 396ZM518.483 173.511L480.896 148.453L503.296 146.554L471.783 19.7431L486.211 15.9463L517.724 142.757L539.365 133.645L518.483 173.511Z" fill="#CA1C86"/>
+            <path d="M438.301 187.179C438.301 195.026 437.795 202.113 436.782 208.441H276.939C278.205 225.146 284.406 238.562 295.543 248.686C306.681 258.811 320.349 263.873 336.548 263.873C359.835 263.873 376.288 254.128 385.906 234.638H432.606C426.278 253.875 414.761 269.695 398.055 282.097C381.603 294.247 361.101 300.322 336.548 300.322C316.552 300.322 298.581 295.892 282.635 287.033C266.941 277.921 254.539 265.265 245.427 249.066C236.567 232.613 232.138 213.63 232.138 192.115C232.138 170.6 236.441 151.743 245.047 135.543C253.906 119.091 266.182 106.435 281.875 97.5759C297.822 88.7168 316.046 84.2873 336.548 84.2873C356.291 84.2873 373.883 88.5903 389.323 97.1962C404.763 105.802 416.786 117.952 425.392 133.645C433.998 149.085 438.301 166.93 438.301 187.179ZM393.12 173.511C392.867 157.564 387.171 144.782 376.034 135.164C364.897 125.545 351.102 120.736 334.65 120.736C319.716 120.736 306.934 125.545 296.303 135.164C285.672 144.529 279.344 157.311 277.319 173.511H393.12Z" fill="white"/>
+            <path d="M105.549 84.2873C122.002 84.2873 136.683 87.7044 149.592 94.5385C162.754 101.373 173.005 111.497 180.345 124.912C187.686 138.328 191.356 154.527 191.356 173.511V296.905H148.453V179.965C148.453 161.235 143.77 146.934 134.405 137.062C125.039 126.937 112.257 121.875 96.0575 121.875C79.8581 121.875 66.9492 126.937 57.3308 137.062C47.9655 146.934 43.2828 161.235 43.2828 179.965V296.905H0V87.7044H43.2828V111.624C50.3701 103.018 59.3557 96.3103 70.2397 91.5011C81.3768 86.6919 93.1467 84.2873 105.549 84.2873Z" fill="white"/>
+          </svg>
+      </div>
+      <div class="text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">Find what's <span class="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia to-azure">next</span></h1>
+        <p class="text-xl mt-16 font-bold bg-clip-text text-transparent bg-gradient-to-r from-fuchsia to-azure ">000000000019d6689c</p>
+      </div>
+    </div>
+    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-duskberry py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2 class="text-base font-semibold leading-7 text-fuchsia">Move faster</h2>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Working at the intersections</p>
+      <p class="mt-6 text-lg leading-8 text-gray-300">Focused on technological progress that benefits <span class="text-fuchsia"><i>everyone</i></span> - especially our home continent of <span class="text-fuchsia">Africa</span> - through memory-safe software, open hardware, and open protocols that maximise privacy and support financial freedom.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-gray-200">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-fuchsia">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+              </svg>
+            </div>
+            Rust
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">Our programming language of choice for a safer, more efficient, and robust future.</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-gray-200">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-fuchsia">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+            </div>
+            Bitcoin
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">Self-custodied transfer of monetary value for everyone. Creating a future where all can participate thanks to the Lightning Network.</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-gray-200">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-fuchsia">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+              </svg>
+            </div>
+            Embedded
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">Creating open hardware with RISC-V and FPGAs to inspire hackers, makers, and the next generation of inventors.</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold leading-7 text-gray-200">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-fuchsia">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+              </svg>
+            </div>
+            Cryptography
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">Keeping things private, secure, and staying ahead of the adverserial Mallory.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+  <div class="bg-fuchsia py-12">
     <a class="flex justify-center" href="https://github.com/nexedworks">
-      <svg class="h-12 fill-white hover:fill-brutal-orange" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <title>GitHub icon</title>
+      <svg class="h-12 fill-white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>GitHub</title>
         <path
           d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
         />
       </svg>
     </a>
-  </header>
-  <footer class="flex-none text-center w-full h-16">
-    <small>&copy; Copyright 2024, NEXED (PTY) LTD. 🇿🇦</small>
+  </div>
+
+<div class="bg-duskberry w-auto py-12">
+  <footer class="text-center w-full text-lg">
+    <small>&copy; 2022-2024 ne⏧ed 🇿🇦</small>
   </footer>
-</main>
-<script>
-    const r = new rive.Rive({
-        src: '/jelly.riv',
-        canvas: document.getElementById("canvas"),
-        autoplay: true,
-        onLoad: () => {
-          r.resizeDrawingSurfaceToCanvas();
-        },
-    });
-</script>
+</div>

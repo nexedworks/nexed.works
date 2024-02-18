@@ -3,10 +3,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'nexed': '#1d0e4422',
-        'starlark': '#452a7333',
-        'brutal-orange': '#ffb952',
-        'regia': '#ff5b15',
+        'duskberry': '#040a25',
+        'fuchsia': '#ca1c86',
+        'forest': '#214e34',
+        'azure': '#3e7cb1'
+
       },
     },
   },
