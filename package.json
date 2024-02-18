@@ -1,7 +1,7 @@
 {
   "name": "nexed.works",
   "version": "0.0.1",
-  "description": "neXed's web presence",
+  "description": "ne⏧ed's web presence",
   "scripts": {
     "start": "run-p start:*",
     "start:eleventy": "eleventy --serve",
